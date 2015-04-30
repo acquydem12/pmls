@@ -1,0 +1,1 @@
+﻿package  {		import flash.text.Font;			public class UVNBachDang extends Font {						public function UVNBachDang() {			// constructor code		}	}	}

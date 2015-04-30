@@ -1,0 +1,1 @@
+﻿package  {		import flash.text.Font;			public class CourierNew extends Font {						public function CourierNew() {			// constructor code		}	}	}

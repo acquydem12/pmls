@@ -1,0 +1,1 @@
+﻿package  {		import flash.text.Font;			public class MyriadPro extends Font {						public function MyriadPro() {			// constructor code		}	}	}
