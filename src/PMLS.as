@@ -55,6 +55,8 @@ package
 		
 		protected function onInit():void
 		{
+			Global.Main = this;
+			
 			_hlbCore	=	new CCore();
 			_hlbCore.onInit( this, null, "debug/media/swf/res.swf" );
 			
@@ -112,9 +114,19 @@ package
 			Font.registerFont( victorian );
 		}
 		
-		protected function playSound():void
+		public function playSound():void
 		{
-			SoundRef.singleton.playSound("debug/media/swf/music.mp3");
+			var arr:Array = [
+				"debug/media/swf/music_1.mp3",
+				"debug/media/swf/music_2.mp3",
+				"debug/media/swf/music_3.mp3",
+				"debug/media/swf/music_4.mp3",
+				"debug/media/swf/music_5.mp3",
+				"debug/media/swf/music_6.mp3",
+			];
+			
+			var rand:int = Math.random() * arr.length;
+			SoundRef.singleton.playSound(arr[rand]);
 		}
 	}
 }

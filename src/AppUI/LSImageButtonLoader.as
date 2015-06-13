@@ -27,6 +27,7 @@ package AppUI
 			function completeHandler(event:Event):void
 			{
 				target.upSkin	=	ldr.content;
+				target.disableSkin	=	ldr.content;
 			}
 		}
 	}

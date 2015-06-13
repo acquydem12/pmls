@@ -7,6 +7,8 @@ package AppUI.Views.MenuItem
 	
 	import flash.events.MouseEvent;
 	
+	import flashx.textLayout.elements.BreakElement;
+	
 	public class L1MenuItem extends MenuItem
 	{
 		protected var _view:LSLessionView;

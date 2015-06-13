@@ -112,7 +112,7 @@ package AppUI.Views
 				_items.push( item );
 			}
 			
-			parse( 1 );
+			parse( 0 );
 		}
 		
 		public function parse( index:uint ):void
@@ -144,7 +144,12 @@ package AppUI.Views
 		protected override function createButtonBar():void
 		{
 			super.createButtonBar();
-			disableButtonHome();
+		}
+		
+		protected override function onHomeClicked(event:MouseEvent):void
+		{
+			changeView( CShareMacros.LS_LESSION_DETAIL, CShareMacros.LS_INTRO, true, false );
+			SoundRef.playSound("click");
 		}
 		
 		protected override function onBackClicked(event:MouseEvent):void

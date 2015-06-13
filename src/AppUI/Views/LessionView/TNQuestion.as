@@ -1,5 +1,7 @@
 package AppUI.Views.LessionView
 {
+	import AppUI.Views.LSMessageBox;
+	
 	import CFramework.CComponent.CLabel;
 	
 	import flash.display.DisplayObject;
@@ -98,13 +100,17 @@ package AppUI.Views.LessionView
 			switch( event.type )
 			{
 				case MouseEvent.ROLL_OVER:
-					( event.currentTarget as CLabel ).color	=	0xffff00;
+					( event.currentTarget as CLabel ).color	=	0x9900FF;
 					break;
 				
 				case MouseEvent.ROLL_OUT:
 					( event.currentTarget as CLabel ).color	=	0x0;
 					break;
 			}
+		}
+
+		public function getCorrect():int {
+			return _correct;
 		}
 		
 		public function playCorrect():void
@@ -150,12 +156,13 @@ package AppUI.Views.LessionView
 			
 			if( result )
 			{	
-				label.color	=	0x00ff00;
+				label.color	=	0x006B24;
 				playCorrect();
 			}
 			else {
 				label.color	=	0xff0000;
 				playWrong();
+				showFeedback();
 			}
 			
 			disable();
@@ -171,6 +178,12 @@ package AppUI.Views.LessionView
 				_selected.push( { index:_index, ans:index, correct:result } );
 			
 			return result;
+		}
+		
+		protected function showFeedback():void {
+			var arr:Array = ["0", "A", "B", "C", "D"];
+			var correct:String = String(arr[getCorrect()]);
+			LSMessageBox.show( "\n\n   Đáp án đúng là " + correct + ". Mời bạn xem lại bài học để nắm vững kiến thức." );
 		}
 		
 		protected function onButtonClicked():void

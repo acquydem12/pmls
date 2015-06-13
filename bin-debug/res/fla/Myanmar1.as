@@ -1,1 +1,0 @@
-﻿package  {		import flash.text.Font;			public class Myanmar1 extends Font {						public function Myanmar1() {			// constructor code		}	}	}

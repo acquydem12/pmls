@@ -94,7 +94,9 @@ package AppUI.Views
 			{
 				case MouseEvent.CLICK:
 					SoundRef.playSound("click");
-					_core.showView( CShareMacros.LS_HELP );
+					changeView( CShareMacros.LS_INTRO, CShareMacros.LS_HELP, false, true );
+//					(Global.CoreGame.holder.getView( CShareMacros.LS_INTRO )
+//						as LSIntroView).changeView( CShareMacros.LS_INTRO, CShareMacros.LS_HELP, false, true );
 					break;
 				
 				case MouseEvent.ROLL_OVER:

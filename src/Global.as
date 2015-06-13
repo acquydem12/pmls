@@ -12,6 +12,8 @@ package
 		
 		public static var CoreGame:CCore;
 		
+		public static var Main:PMLS;
+		
 		public static var CTTController:TooltipController;
 	}
 }

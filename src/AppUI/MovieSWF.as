@@ -47,7 +47,6 @@ package AppUI
 			
 			function onSoundLoadComplete(e:Event):void{
 				counter++;
-				
 				play();
 			}
 			
@@ -141,8 +140,8 @@ package AppUI
 			if(ldr != null)
 			{
 				_mc = ldr.content as MovieClip;
-				_mc.addEventListener( MouseEvent.CLICK, onPause );
 				_mc.buttonMode = true;
+				_mc.addEventListener( MouseEvent.CLICK, onPause );
 				_mc.stop();
 				_mask = new Shape();
 				_mask.graphics.beginFill(0xffffff);

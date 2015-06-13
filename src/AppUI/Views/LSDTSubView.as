@@ -40,6 +40,12 @@ package AppUI.Views
 		private var _prgBar:ProgressBar;
 		
 		private var mapTime:Object	=	{
+			"131":232,
+			"132":486,
+			"141":579,
+			"142":1533,
+			"151":1297,
+			"152":1573,
 			"171":398,
 			"172":1434,
 			"181":305,

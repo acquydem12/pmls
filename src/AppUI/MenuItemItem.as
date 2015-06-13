@@ -21,6 +21,8 @@ package AppUI
 		private var _index:uint;
 		private var _listener:ILessionListener;
 		
+		private var _hasAnimation:Boolean = false;
+		
 		public function MenuItemItem( index:uint, indexStr:String, text:String, color:int, listener:ILessionListener )
 		{
 			super();
@@ -52,10 +54,34 @@ package AppUI
 			addEventListener( MouseEvent.CLICK, onClicked );
 		}
 		
+		public function registerAnimation():void 
+		{
+			_hasAnimation = true;
+			
+			addEventListener( MouseEvent.ROLL_OUT, onMouseHandler );
+			addEventListener( MouseEvent.ROLL_OVER, onMouseHandler );	
+		}
+		
+		protected function onMouseHandler( event:MouseEvent ):void 
+		{
+			switch( event.type )
+			{
+				case MouseEvent.ROLL_OVER:
+					_lblIndex.color = 0x3333FF;
+					_lblText.color = 0x3333FF;
+					break;
+				
+				case MouseEvent.ROLL_OUT:
+					_lblIndex.color = 0x0;
+					_lblText.color = 0x0;
+					break;
+			}
+		}
+		
 		public function normalize():void
 		{
-			_lblIndex.color	=	_color;
-			_lblText.color	=	_color;
+			_lblIndex.color	=	0x0;
+			_lblText.color	=	0x0;
 			this.alpha = 1;
 		}
 		
@@ -69,6 +95,8 @@ package AppUI
 		public function dispose():void
 		{
 			removeEventListener( MouseEvent.CLICK, onClicked );
+			removeEventListener( MouseEvent.ROLL_OUT, onMouseHandler );
+			removeEventListener( MouseEvent.ROLL_OVER, onMouseHandler );
 		}
 		
 		protected function onClicked( event:MouseEvent ):void

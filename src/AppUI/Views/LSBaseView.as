@@ -17,7 +17,6 @@ package AppUI.Views
 	
 	public class LSBaseView extends CView
 	{
-		private var _btn_next:CImageButton;
 		private var _btn_back:CImageButton;
 		private var _btn_home:CImageButton;
 		private var _btn_sound:CImageButton;
@@ -84,7 +83,7 @@ package AppUI.Views
 		protected function createButtonBar():void
 		{
 			_btn_home	=	new CImageButton;
-			_btn_home.move( 330, 550 );
+			_btn_home.move( 350, 550 );
 			addChild( _btn_home );
 			_btn_home.addEventListener( MouseEvent.CLICK, onHomeClicked );
 			_btn_home.addEventListener( MouseEvent.ROLL_OVER, onButtonHandler );
@@ -92,24 +91,15 @@ package AppUI.Views
 			Global.CTTController.addTooltip( _btn_home, "Menu" );
 			
 			_btn_back	=	new CImageButton;
-			_btn_back.move( 380, 550 );
+			_btn_back.move( 400, 550 );
 			addChild( _btn_back );
 			_btn_back.addEventListener( MouseEvent.CLICK, onBackClicked );
 			_btn_back.addEventListener( MouseEvent.ROLL_OVER, onButtonHandler );
 			_btn_back.addEventListener( MouseEvent.ROLL_OUT, onButtonHandler );
 			Global.CTTController.addTooltip( _btn_back, "Quay lại" );
 			
-			_btn_next	=	new CImageButton;
-			_btn_next.move( 430, 550 );
-			addChild( _btn_next );
-//			_btn_next.addEventListener( MouseEvent.CLICK, onNextClicked );
-//			_btn_next.addEventListener( MouseEvent.ROLL_OVER, onButtonHandler );
-//			_btn_next.addEventListener( MouseEvent.ROLL_OUT, onButtonHandler );
-			Global.CTTController.addTooltip( _btn_next, "Đi tới" );
-			_btn_next.alpha = 0.5;
-			
 			_btn_sound	=	new CImageButton;
-			_btn_sound.move( 480, 550 );
+			_btn_sound.move( 450, 550 );
 			addChild( _btn_sound );
 			_btn_sound.addEventListener( MouseEvent.CLICK, onSoundClicked );
 			_btn_sound.addEventListener( MouseEvent.ROLL_OVER, onButtonHandler );
@@ -117,29 +107,17 @@ package AppUI.Views
 			Global.CTTController.addTooltip( _btn_sound, "Âm thanh" );
 			
 			_btn_help	=	new CImageButton;
-			_btn_help.move( 530, 550 );
+			_btn_help.move( 500, 550 );
 			addChild( _btn_help );
 			_btn_help.addEventListener( MouseEvent.CLICK, onHelpClicked );
 			_btn_help.addEventListener( MouseEvent.ROLL_OVER, onButtonHandler );
 			_btn_help.addEventListener( MouseEvent.ROLL_OUT, onButtonHandler );
 			Global.CTTController.addTooltip( _btn_help, "Trợ giúp" );
 			
-			// Load resources
-			var backClass:Class		=	_core.resourceManager.getClass( "btn_back" );
-			var homeClass:Class		=	_core.resourceManager.getClass( "btn_menu" );
-			var soundClass:Class	=	_core.resourceManager.getClass( "btn_sound" );
-			var helpClass:Class		=	_core.resourceManager.getClass( "btn_help" );
-			
-			if( backClass )
-				_btn_back.upSkin	=	new backClass;
-			if( homeClass )
-				_btn_home.upSkin	=	new homeClass;
-			if( soundClass )
-				_btn_sound.upSkin	=	new soundClass;
-			if( helpClass )
-				_btn_help.upSkin	=	new helpClass;
-			
-			var loader:LSImageButtonLoader = new LSImageButtonLoader( _btn_next, "debug/media/images/6.png" );
+			new LSImageButtonLoader( _btn_back, "debug/media/images/btnBack.png" );
+			new LSImageButtonLoader( _btn_home, "debug/media/images/btnHome.png" );
+			new LSImageButtonLoader( _btn_sound, "debug/media/images/btnMusic.png" );
+			new LSImageButtonLoader( _btn_help, "debug/media/images/btnHelp.png" );
 		}
 		
 		private function onButtonHandler( event:MouseEvent ):void
@@ -157,13 +135,6 @@ package AppUI.Views
 					disp.scaleY	=	1;
 					break;
 			}
-		}
-		
-		protected function disableButtonNext():void 
-		{
-			_btn_next.disable( onNextClicked );
-			_btn_next.removeEventListener( MouseEvent.ROLL_OVER, onButtonHandler );
-			_btn_next.removeEventListener( MouseEvent.ROLL_OUT, onButtonHandler );
 		}
 		
 		protected function disableButtonHome():void
@@ -211,11 +182,6 @@ package AppUI.Views
 		{
 			SoundRef.playSound("click");
 			LSMessageBox.show( getHelpMessage() );
-		}
-		
-		protected function onNextClicked( event:MouseEvent ):void
-		{
-			SoundRef.playSound("click");
 		}
 	}
 }

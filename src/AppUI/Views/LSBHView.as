@@ -128,12 +128,12 @@ package AppUI.Views
 			
 			_lblLessionName	=	new CLabel;
 			_lblLessionName.size	=	20;
-			_lblLessionName.color	=	0x0;
+			_lblLessionName.color	=	0x147b73;
 			_lblLessionName.setSize( 580, 60 );
 			_lblLessionName.move( 245, 15 );
 			_lblLessionName.wrapWord	=	true;
 			_lblLessionName.bold		=	true;
-			_lblLessionName.setFont( "Myriad Pro Cond", true );
+			_lblLessionName.setFont( "Victorian", true );
 			_lblLessionName.align	=	AlignMode.CENTER;
 			addChild( _lblLessionName );
 			

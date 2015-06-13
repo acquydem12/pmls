@@ -38,12 +38,13 @@ package AppUI.Views.LessionView
 			this._color		=	color;
 			
 			_text	=	new CLabel;
-			_text.size	=	30;
+			_text.size	=	25;
 			_text.setSize( 630, 100 );
 			_text.color	=	0x0;
 			_text.wrapWord	=	true;
 			_text.bold		=	true;
-			_text.setFont( "Myriad Pro Cond", true );
+//			_text.setFont( "Myriad Pro Cond", true );
+			_text.setFont( "Victorian", true );
 			addChild( _text );
 			
 			var data:Object = JSONData.Clip[index];
@@ -51,21 +52,36 @@ package AppUI.Views.LessionView
 //			new LSImageLoader( _text, data[indexFile].image );
 			
 			addEventListener( MouseEvent.CLICK, onClicked );
+			addEventListener( MouseEvent.ROLL_OVER, onMouseHandler );
+			addEventListener( MouseEvent.ROLL_OUT, onMouseHandler );
 		}
 		
 		public function normalize():void
 		{
 			_text.color = 0x0;
+			this.alpha = 1;
 		}
 		
 		public function highLight():void
 		{
 			_text.color = 0xff00ff;
+			this.alpha = 0.7;
 		}
 		
 		public function dispose():void
 		{
 			removeEventListener( MouseEvent.CLICK, onClicked );
+			removeEventListener( MouseEvent.ROLL_OVER, onMouseHandler );
+			removeEventListener( MouseEvent.ROLL_OUT, onMouseHandler );
+		}
+		
+		protected function onMouseHandler( event:MouseEvent ):void
+		{
+			if (event.type == MouseEvent.ROLL_OUT) {
+				_text.color = 0x0;
+			} else {
+				_text.color = 0xff00ff;
+			}
 		}
 		
 		protected function onClicked( event:MouseEvent ):void

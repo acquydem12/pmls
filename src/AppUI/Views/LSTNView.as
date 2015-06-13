@@ -35,6 +35,8 @@ package AppUI.Views
 		private var _btnSave:CImageButton;
 		private var _btnNextLession:CImageButton;
 		
+		private var _index:uint;
+		
 		public function LSTNView(identify:String)
 		{
 			super(identify, true);
@@ -135,7 +137,6 @@ package AppUI.Views
 			parse( _index );
 		}
 		
-		private var _index:uint;
 		public function parse( index:uint ):void
 		{
 			removeAllButton();

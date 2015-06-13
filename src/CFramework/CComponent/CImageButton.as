@@ -472,6 +472,7 @@ package CFramework.CComponent
 			if( !disableSkin )
 			{
 				filters	=	FilterEffect.createBackWhiteImage();
+//				this.alpha = 0.5;
 			} else
 			{
 				copyProperties( _disableSkin );
@@ -490,6 +491,7 @@ package CFramework.CComponent
 			if( !disableSkin )
 			{
 				filters	=	null;
+//				this.alpha = 1;
 			} else {
 				copyProperties( _upSkin );
 				drawFace( _upSkin );

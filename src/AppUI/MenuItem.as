@@ -49,11 +49,17 @@ package AppUI
 			items	=	new Vector.<MenuItemItem>();
 			var data:Object	=	JSONData.Chapter[index+1];
 			var counter:Number	=	60;
+			
 			for( var str:String in data )
 			{
 				var item:MenuItemItem	=	new MenuItemItem( data[str].index, data[str].index, data[str].text, 0x0, this );
 				item.x = 30;
 				item.y = counter;
+				
+				var canTouch:Boolean = JSONData.ChapterMapping[data[str].index];
+				if (canTouch) {
+					item.registerAnimation();
+				}
 				
 				counter	+=	item.height + 10;
 				
@@ -74,6 +80,7 @@ package AppUI
 				return;
 			}
 			
+			Global.Main.playSound(); 
 			SoundRef.playSound("click");
 			LSLessionMenuView.show( index );
 			(Global.CoreGame.holder.getView( CShareMacros.LS_MENU )
