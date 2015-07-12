@@ -6,6 +6,7 @@ package Data
 			"13":true,
 			"14":true,
 			"15":true,
+			"16":true,
 			"17":true,
 			"18":true,
 			"19":true,
@@ -24,7 +25,8 @@ package Data
 				"1" : { 
 					"0" : { index:13, text:"Việt Nam từ thời nguyên thuỷ" },
 					"1" : { index:14, text:"Các quốc gia cổ đại trên đất nước Việt Nam" },
-					"2" : { index:15, text:"Thời Bắc thuộc và các cuộc đấu tranh giành độc lập dân tộc\n(Từ thế kỉ II TCN đến đầu thế kỉ X)" }
+					"2" : { index:15, text:"Thời Bắc thuộc và các cuộc đấu tranh giành độc lập dân tộc\n(Từ thế kỉ II TCN đến đầu thế kỉ X)" },
+					"3" : { index:16, text:"Thời Bắc thuộc và các cuộc đấu tranh giành độc lập dân tộc\n(Tiếp theo)" }
 				},
 				"2" : {  
 					"0" : { index:17, text:"Quá trình hình thành và phát triển nhà nước phong kiến\n(Từ thế kỉ X đến thế kỉ XV)" },
@@ -49,13 +51,22 @@ package Data
 		{
 			return {
 				"13" : {
-					"0" : { index:1, link:"debug/media/clip/13-1", image:"debug/media/images/13-1.png", text:"I. Bước đầu xây dựng nhà nước độc lập ở thế kỉ thứ X" }
+					"0" : { index:1, link:"debug/media/clip/13-1", image:"debug/media/images/13-1.png", text:"Việt Nam thời nguyên thuỷ" }
 				},
 				"14" : {
-					"0" : { index:1, link:"debug/media/clip/14-1", image:"debug/media/images/18-1.png", text:"I. Mở rộng, phát triển nông nghiệp và thủ công nghiệp" }
+					"0" : { index:1, link:"debug/media/clip/14-1", image:"debug/media/images/18-1.png", text:"I. Quốc gia cổ Văn Lang - Âu Lạc" },
+					"1" : { index:2, link:"debug/media/clip/14-2", image:"debug/media/images/18-1.png", text:"II. Quốc gia cổ Chăm pa" },
+					"2" : { index:3, link:"debug/media/clip/14-3", image:"debug/media/images/18-1.png", text:"III. Quốc gia cổ Phù Nam" }
 				},
 				"15" : {
-					"0" : { index:1, link:"debug/media/clip/15-1", image:"debug/media/images/19-1.png", text:"I. Các cuộc kháng chiến chống quân xâm lược Tống" }
+					"0" : { index:1, link:"debug/media/clip/15-1", image:"debug/media/images/19-1.png", text:"Thời Bắc thuộc và các cuộc đấu tranh giành độc lập dân tộc" }
+				},
+				"16" : {
+					"0" : { index:1, link:"debug/media/clip/16-1", image:"debug/media/images/19-1.png", text:"1. Khái quát phong trào đấu tranh từ thế kỉ I-X" },
+					"1" : { index:2, link:"debug/media/clip/16-2", image:"debug/media/images/19-1.png", text:"2. Cuộc khởi nghĩa của Hai Bà Trưng" },
+					"2" : { index:3, link:"debug/media/clip/16-3", image:"debug/media/images/19-1.png", text:"3. Cuộc khởi nghĩa của Lý Bí" },
+					"3" : { index:4, link:"debug/media/clip/16-4", image:"debug/media/images/19-1.png", text:"4. Cuộc khởi nghĩa của Khúc Thừa Dụ" },
+					"4" : { index:5, link:"debug/media/clip/16-5", image:"debug/media/images/19-1.png", text:"5. Ngô Quyền và chiến thắng Bạch Đằng năm 938" }
 				},
 				"17" : {
 					"0" : { index:1, link:"debug/media/clip/17-1", image:"debug/media/images/17-1.png", text:"I. Bước đầu xây dựng nhà nước độc lập ở thế kỉ thứ X" },
@@ -83,6 +94,7 @@ package Data
 				"13" : { index:1, text:"Việt Nam từ thời nguyên thuỷ", color:0x0000ff },
 				"14" : { index:4, text:"Các quốc gia cổ đại trên đất nước Việt Nam", color:0xffff00 },
 				"15" : { index:2, text:"Thời Bắc thuộc và các cuộc đấu tranh giành độc lập dân tộc\n(Từ thế kỉ II TCN đến đầu thế kỉ X)", color:0xff00ff },
+				"16" : { index:2, text:"Thời Bắc thuộc và các cuộc đấu tranh giành độc lập dân tộc\n(Tiếp theo)", color:0xff00ff },
 				"17" : { index:1, text:"Quá trình hình thành và phát triển nhà nước phong kiến\n(Từ thế kỉ X đến thế kỉ XV)", color:0x0000ff },
 				"18" : { index:4, text:"Công cuộc xây dựng và phát triển kinh tế trong các thế kỉ X - XV", color:0xffff00 },
 				"19" : { index:2, text:"Những cuộc kháng chiến chống ngoại xâm ở các thế kỉ X - XV", color:0xff00ff },
@@ -97,10 +109,19 @@ package Data
 					"0" : { index:"I", text:"Bước đầu xây dựng nhà nước độc lập ở thế kỉ X", color:0xA30505 }
 				},
 				"14" : {
-					"0" : { index:" ", text:"Mở rộng, phát triển nông nghiệp và thủ công nghiệp", color:0xA30505 }
+					"0" : { index:" ", text:"Quốc gia cổ Văn Lang - Âu Lạc", color:0xA30505 },
+					"1" : { index:" ", text:"Quốc gia cổ Chăm pa", color:0xA30505 },
+					"2" : { index:" ", text:"Quốc gia cổ Phù Nam", color:0xA30505 }
 				},
 				"15" : {
 					"0" : { index:" ", text:"Các cuộc kháng chiến chống quân xâm lược Tống", color:0xA30505 }
+				},
+				"16" : {
+					"0" : { index:" ", text:"Khái quát phong trào đấu tranh từ thế kỉ I-X", color:0xA30505 },
+					"1" : { index:" ", text:"Cuộc khởi nghĩa của Hai Bà Trưng", color:0xA30505 },
+					"2" : { index:" ", text:"Cuộc khởi nghĩa của Lý Bí", color:0xA30505 },
+					"3" : { index:" ", text:"Cuộc khởi nghĩa của Khúc Thừa Dụ", color:0xA30505 },
+					"4" : { index:" ", text:"Ngô Quyền và chiến thắng Bạch Đằng năm 938", color:0xA30505 }
 				},
 				"17" : {
 					"0" : { index:"I", text:"Bước đầu xây dựng nhà nước độc lập ở thế kỉ X", color:0xA30505 },
@@ -126,181 +147,50 @@ package Data
 		{
 			return {
 				"13" : {
-					"1" : { q:"Kinh đô nước ta thời Lí, Trần là gì?", 
-						a:"Đông Kinh", b:"Cổ Loa", c:"Thăng Long", d:"Hoa Lư", correct:"3" },
-					
-					"2" : { q:"Quốc hiệu nước ta thời Lí, Trần là gì", 
-						a:"Đại Việt", b:"Đại Cồ Việt", c:"Đại Nam", d:"Nam Việt", correct:"1" },
-					
-					"3" : { q:"Tổ chức bộ máy nhà nước và hệ thống các đơn vị hành chính nước ta thời Lí, Trần có đặc điểm gì?", 
-						a:"Chưa quy củ, còn lỏng lẻo", b:"Khá chặt chẽ, đầy đủ và có hệ thống hơn so với tổ chức bộ máy nhà nước thời Ngô, Đinh, Tiền Lê", 
-						c:"Tiến bộ hơn thời Đinh, Tiền Lê nhưng chưa chặt chẽ.", d:"Đầy đủ các cơ quan nhưng chưa có chức quan", correct:"2" },
-					
-					"4" : { q:"Bộ luật Hình Thư ra đời khi nào?", 
-						a:"Năm 1010", b:"Năm 1022", c:"Năm 1042", d:"Năm 1075", correct:"3" },
-					
-					"5" : { q:"Triều đại nào đã ban hành bộ luật Hình Thư", 
-						a:"Triều Ngô", b:"Triều Lí", c:"Triều Đinh", d:"Triều Trần", correct:"2" },
-					
-					"6" : { q:"Sự kiện nào dưới triều Lí cho thầy Nho giáo bắt đầu chiếm ưu thế ở nước ta?", 
-						a:"Các nhà Nho bắt đầu tham gia chính trị.", b:"Nho giáo được phổ biến rộng rãi ở trong nước.", 
-						c:"Nhà Lí cho xây dựng Văn miếu, thờ Khổng Tử và các học trò xuất sắc của ông.", 
-						d:"Phật giáo dần mất vai trò độc tôn của mình.", correct:"3" },
-					
-					"7" : { q:"Vua cuối cùng của triều Lí là:", 
-						a:"Lí Công Uẩn", b:"Lí Nhân Tông", c:"Lí Thánh Tông", d:"Lí Chiêu Hoàng", correct:"4" },
-					
-					"8" : { q:"Nhân vật có công lớn trong việc đưa Trần Cảnh lên ngôi thay thế triều Lí là ai?", 
-						a:"Trần Thủ Độ", b:"Trần Quang Khải", c:"Trần Hưng Đạo", d:"Trần Bình Trọng", correct:"1" },
-					
-					"9" : { q:"Bộ luật được ban hành dưới triều Lê là:", 
-						a:"Quốc triều Hình luật", b:"Hình thư", c:"Thanh triều Hình luật", d:"Hoàng Việt luật lệ", correct:"1" },
-					
-					"10" : { q:"Triều vua thịnh trị nhất dưới thời nhà Lê là:", 
-						a:"Lê Thái Tổ", b:"Lê Thái Tông", c:"Lê Thánh Tông", d:"Lê Nhân Tông", correct:"3" },
-					//1
-					"11" : { q:"Sự kiện đánh dấu nhà nước quân chủ chuyên chế Việt Nam chính thức thành lập là:", 
-						a:"Ngô Quyền xưng vương (939)", b:"Đinh Bộ Lĩnh lên ngồi Hoàng đế (968)", 
-						c:"Lý Thái Tổ dời đô ra Thăng Long (1010)", d:"Lý Thánh Tông đổi tên nước là Đại Việt", correct:"2" },
-					//2
-					"12" : { q:"Dưới thời Lý, Trần, Hồ, Lê chức quan cao nhất là:", 
-						a:"Tể tướng", b:"Thái úy", c:"Hà đê sứ", d:"Ngự sử đài", correct:"1" },
-					//3
-					"13" : { q:"Vua đã thực hiện cải cách hành chính bỏ chức Tể tướng là ai?", 
-						a:"Lý Thái Tổ", b:"Trần Nhân Tông", c:"Lê Thái Tổ", d:"Lê Thánh Tông", correct:"4" },
-					//4
-					"14" : { q:"Nhà nước phong kiến được hoàn chỉnh dưới thời:", 
-						a:"Lý", b:"Trần", c:"Hồ", d:"Lê Sơ", correct:"4" },
-					//5
-					"15" : { q:"Giáo dục thi cử trởi thành nguồn đào tạo và tuyển chọn quan lại dưới thời:", 
-						a:"Tiền Lê", b:"Trần", c:"Hồ", d:"Lê", correct:"4" },
-					//6
-					"16" : { q:"Đơn vị hành chính thời Lê Thánh Tông khác cơ bản với thời Lý, Trần là", 
-						a:"phủ", b:"đạo thừa tuyên", c:"huyện", d:"châu", correct:"2" },
-					//7
-					"17" : { q:"Bộ Quốc triều hình luật được hành dưới thời vua:", 
-						a:"Lý Thái Tông", b:"Lý Nhân Tông", c:"Trần Thánh Tông", d:"Lê Thánh Tông", correct:"4" },
-					//8
-					"18" : { q:"Nhân dân được tổ chức dân binh là chính sách của", 
-						a:"Nhà Lý", b:"Nhà Trần", c:"Nhà Hồ", d:"Nhà Lê", correct:"2" }
+					"1" : { q:"Công xã thị tộc hình thành từ thời:", a:"Người tối cổ.", b:"Văn hoá Sơn Vi.", c:"Văn hoá Hoà Bình.", d:"Văn hoá Phùng Nguyên.", correct:"1" },
+					"2" : { q:"Tục thiêu xác chết là của cư dân", a:"Văn hoá Sa Huỳnh", b:"Văn hoá Đồng Nai", c:"Văn hoá Phùng Nguyên", d:"Văn hoá Ngườm ", correct:"0" },
+					"3" : { q:"Hoạt động kinh tế của cư dân Phùng Nguyên, Sa Huỳnh, Đồng Nai có một điểm chung giống nhau là: ", a:"Làm gốm", b:"Khai thác sản vật rừng", c:"Chăn nuôi gia súc", d:"Trồng lúa nước", correct:"3" },
+					"4" : { q:"Bằng chứng chứng tỏ thuật luyện kim ra đời trên đất nước ta là ", a:"Rìu đồng", b:"Dao, cuốc đồng", c:"Cục đồng, xỉ đồng", d:"Đồ dùng bằng đồng", correct:"2" },
+					"5" : { q:"Người tối cổ sinh sống trên đất  Việt Nam cách ngày nay khoảng bao nhiêu năm", a:"Cách ngày nay 20,000 đến 30,000 năm ", b:"Cách ngày nay từ 30,000 đến 40,000 năm ", c:"Cách ngày nay từ 40,000 đến 50,000 năm", d:"Cách ngày nay từ 50,000 đến 60,000 năm", correct:"1" },
+					"6" : { q:"Nền văn hoá sơ kì đá mới tồn tại ở Việt Nam trong thời gian là bao nhiêu năm", a:"Cách ngày nay khoảng 6,000 đến 12,000 năm ", b:"Cách ngày nay khoảng 12,000 đến 16,000 năm", c:"Cách ngày nay khoảng 16,000 đến 20,000 năm", d:"Cách ngày nay khoảng 20,000 đến 30,000 năm", correct:"0" },
+					"7" : { q:"Tư liệu khảo cổ học cho thấy, người tối cổ đã", a:"Sống thành từng bầy, săn bắt thú rừng, hái lượm hoa quả để sống ", b:"Sống trong các công xã thị tộc, lấy săn bắt, đánh cá, hái lượm làm nguồn sống chính", c:"Sống trong các công xã thị tốc, làm nghề thủ công, chăn nuôi để sinh sống.", d:"Sống trong các công xã thị tốc, làm nông nghiệp trồng lúa.", correct:"1" },
+					"8" : { q:"Người nguyên thủ ở Việt Nam sinh sống chủ yếu ở đâu", a:"Vùng đồng bằng Bắc Bộ", b:"Vùng miền núi Bắc Bộ", c:"Vùng Tây Nguyên", d:"Nhiều địa phương khác trong cả ngước", correct:"1" },
+					"9" : { q:"Đặc điểm cuộc sống của cư dân thuộc nền văn hoá Hoà Bình, Bắc Sơn là gì", a:"Sống định cư, hợp thành các thị tốc, bộ lạc. Ngoài việc săn bắt thú rừng, hái lượm hoa quả còn biết trồng trọt.", b:"Sống thành từng bầy, săn bắt thú rừng và hái lượm hoa quả để sinh sống", c:"Sống trong các hang động, ven bờ suối, sử dụng công cụ đá được ghè đẽo.", d:"Sống định cư hợp thành các thị tốc, bộ lạc, săn bắt thủ từng, hái lượm hoa quả.", correct:"0" }
 				},
 				"14" : {
-					"1" : { q:"Kinh đô nước ta thời Lí, Trần là gì?", 
-						a:"Đông Kinh", b:"Cổ Loa", c:"Thăng Long", d:"Hoa Lư", correct:"3" },
-					
-					"2" : { q:"Quốc hiệu nước ta thời Lí, Trần là gì", 
-						a:"Đại Việt", b:"Đại Cồ Việt", c:"Đại Nam", d:"Nam Việt", correct:"1" },
-					
-					"3" : { q:"Tổ chức bộ máy nhà nước và hệ thống các đơn vị hành chính nước ta thời Lí, Trần có đặc điểm gì?", 
-						a:"Chưa quy củ, còn lỏng lẻo", b:"Khá chặt chẽ, đầy đủ và có hệ thống hơn so với tổ chức bộ máy nhà nước thời Ngô, Đinh, Tiền Lê", 
-						c:"Tiến bộ hơn thời Đinh, Tiền Lê nhưng chưa chặt chẽ.", d:"Đầy đủ các cơ quan nhưng chưa có chức quan", correct:"2" },
-					
-					"4" : { q:"Bộ luật Hình Thư ra đời khi nào?", 
-						a:"Năm 1010", b:"Năm 1022", c:"Năm 1042", d:"Năm 1075", correct:"3" },
-					
-					"5" : { q:"Triều đại nào đã ban hành bộ luật Hình Thư", 
-						a:"Triều Ngô", b:"Triều Lí", c:"Triều Đinh", d:"Triều Trần", correct:"2" },
-					
-					"6" : { q:"Sự kiện nào dưới triều Lí cho thầy Nho giáo bắt đầu chiếm ưu thế ở nước ta?", 
-						a:"Các nhà Nho bắt đầu tham gia chính trị.", b:"Nho giáo được phổ biến rộng rãi ở trong nước.", 
-						c:"Nhà Lí cho xây dựng Văn miếu, thờ Khổng Tử và các học trò xuất sắc của ông.", 
-						d:"Phật giáo dần mất vai trò độc tôn của mình.", correct:"3" },
-					
-					"7" : { q:"Vua cuối cùng của triều Lí là:", 
-						a:"Lí Công Uẩn", b:"Lí Nhân Tông", c:"Lí Thánh Tông", d:"Lí Chiêu Hoàng", correct:"4" },
-					
-					"8" : { q:"Nhân vật có công lớn trong việc đưa Trần Cảnh lên ngôi thay thế triều Lí là ai?", 
-						a:"Trần Thủ Độ", b:"Trần Quang Khải", c:"Trần Hưng Đạo", d:"Trần Bình Trọng", correct:"1" },
-					
-					"9" : { q:"Bộ luật được ban hành dưới triều Lê là:", 
-						a:"Quốc triều Hình luật", b:"Hình thư", c:"Thanh triều Hình luật", d:"Hoàng Việt luật lệ", correct:"1" },
-					
-					"10" : { q:"Triều vua thịnh trị nhất dưới thời nhà Lê là:", 
-						a:"Lê Thái Tổ", b:"Lê Thái Tông", c:"Lê Thánh Tông", d:"Lê Nhân Tông", correct:"3" },
-					//1
-					"11" : { q:"Sự kiện đánh dấu nhà nước quân chủ chuyên chế Việt Nam chính thức thành lập là:", 
-						a:"Ngô Quyền xưng vương (939)", b:"Đinh Bộ Lĩnh lên ngồi Hoàng đế (968)", 
-						c:"Lý Thái Tổ dời đô ra Thăng Long (1010)", d:"Lý Thánh Tông đổi tên nước là Đại Việt", correct:"2" },
-					//2
-					"12" : { q:"Dưới thời Lý, Trần, Hồ, Lê chức quan cao nhất là:", 
-						a:"Tể tướng", b:"Thái úy", c:"Hà đê sứ", d:"Ngự sử đài", correct:"1" },
-					//3
-					"13" : { q:"Vua đã thực hiện cải cách hành chính bỏ chức Tể tướng là ai?", 
-						a:"Lý Thái Tổ", b:"Trần Nhân Tông", c:"Lê Thái Tổ", d:"Lê Thánh Tông", correct:"4" },
-					//4
-					"14" : { q:"Nhà nước phong kiến được hoàn chỉnh dưới thời:", 
-						a:"Lý", b:"Trần", c:"Hồ", d:"Lê Sơ", correct:"4" },
-					//5
-					"15" : { q:"Giáo dục thi cử trởi thành nguồn đào tạo và tuyển chọn quan lại dưới thời:", 
-						a:"Tiền Lê", b:"Trần", c:"Hồ", d:"Lê", correct:"4" },
-					//6
-					"16" : { q:"Đơn vị hành chính thời Lê Thánh Tông khác cơ bản với thời Lý, Trần là", 
-						a:"phủ", b:"đạo thừa tuyên", c:"huyện", d:"châu", correct:"2" },
-					//7
-					"17" : { q:"Bộ Quốc triều hình luật được hành dưới thời vua:", 
-						a:"Lý Thái Tông", b:"Lý Nhân Tông", c:"Trần Thánh Tông", d:"Lê Thánh Tông", correct:"4" },
-					//8
-					"18" : { q:"Nhân dân được tổ chức dân binh là chính sách của", 
-						a:"Nhà Lý", b:"Nhà Trần", c:"Nhà Hồ", d:"Nhà Lê", correct:"2" }
+					"1" : { q:"Hoạt động kinh tế chủ yếu của cư dân các quốc gia cổ đại trên đất nước Việt Nam là", a:"Thủ công nghiệp", b:"Khai thác lâm sản", c:"Nông nghiệp trồng lúa", d:"Chăn nuôi", correct:"2" },
+					"2" : { q:"Quốc gia cổ Phù Nam ra đời tên cơ sở nền văn hoá", a:"Đông Sơn", b:"Phùng Nguyên", c:"Sa Huỳnh", d:"Óc Eo", correct:"3" },
+					"3" : { q:"Nguồn lượng thức chính của cư dân Văn Lang – Âu Lạc, Chăm-pa, Phù Nam là ", a:"Sắn", b:"Lúa mì ", c:"Gạo nếp và gạo tẻ", d:"Các loại củ ", correct:"2" },
+					"4" : { q:"Cư dân Văn Lang – Âu Lạc, Chăm-pa, Phù Nam có chung tập quán là:", a:"Ở nhà sàn", b:"Ăn trầu", c:"Hoả táng người chết ", d:"Xăm mình", correct:"0" },
+					"5" : { q:"Tín ngưỡng của cư dân Phù Nam là ", a:"Thờ cúng tổ tiên", b:"Sùng bái tự nhiên", c:"Sùng kính những người có công với làng nước", d:"Phật giáo", correct:"3" },
+					"6" : { q:"Cư dân Văn Lang – Âu Lạc và Cham-pa có chung tập quán là ", a:"Nhuộm răng đen", b:"Ăn trầu", c:"Xăm mình", d:"Đeo nhiều đồ trang sức", correct:"1" },
+					"7" : { q:"Công cụ lao động của cư dân Đông Sơn là gì ", a:"Công cụ lao động bằng đá", b:"Công cụ lao động bằng đồng ", c:"Công cụ lao động bằng đồng là phổ biến, bắt đầu có công cụ lao động bằng sắt.", d:"Công cụ lao động bằng sắt.", correct:"2" },
+					"8" : { q:"Kinh đô của nước Văn Lang là ", a:"Bạch Hạc", b:"Cổ Loa ", c:"Đại La ", d:"Thăng Long ", correct:"0" },
+					"9" : { q:"Nước Lâm Ấp (Chăm-pa) được thành lập vào thời gian nào ", a:"Cuối thế kỉ II trước công nguyên", b:"Cuối thể kỉ I trướ công nguyên", c:"Thế kỉ I", d:"Cuối thế kỉ II ", correct:"3" },
+					"10" : { q:".Kinh đô đầu tiền của nước Lâm Ấp là ", a:"Mỹ Sơn", b:"Trà Kiệu", c:"Đồng Dương", d:"Đồ Bàn ", correct:"1" },
+					"11" : { q:".Thời gian ra đời và suy tàn của quốc gia cổ Phù Nam là ", a:"Ra đời vào khoảng thế kỉ I trước công nguyên và suy tàn vào thế kỉ X sau công nguyên", b:"Ra đời và thế kỉ I và suy tàn vào thế kỉ VII", c:"Ra đời vào thế kỉ I và suy tàn vào thế kỉ VIII", d:"Ra đời vào thế kỉ I và suy tàn vào thế kỉ X ", correct:"2" },
+					"12" : { q:".Thời gian nước Âu Lạc bị Triệu Đà xâm lược là ", a:"Năm 221 trước công nguyên", b:"Năm 179 trước công nguyên", c:"Năm 106 trước công nguyên", d:"Năm 40 sau công nguyên ", correct:"1" },
+					"13" : { q:".Sau khi chiếm Âu Lạc, nhà Triệu đã ", a:"Duy trì nguyên tổ chức bộ máy nhà nước Âu Lạc, sử dụng quan lại địa phương để cai trị.", b:"Chia nước Âu Lạc thành hai quận, sáp nhập hai quận đó vào nước Nam Việt.", c:"Chia nước Âu Lạc thành ba quận và để ba quận đó được độc lập với Nam Việt.", d:"Chia nước Âu Lạc thành nhiều châu", correct:"1" }
 				},
 				"15" : {
-					"1" : { q:"Kinh đô nước ta thời Lí, Trần là gì?", 
-						a:"Đông Kinh", b:"Cổ Loa", c:"Thăng Long", d:"Hoa Lư", correct:"3" },
-					
-					"2" : { q:"Quốc hiệu nước ta thời Lí, Trần là gì", 
-						a:"Đại Việt", b:"Đại Cồ Việt", c:"Đại Nam", d:"Nam Việt", correct:"1" },
-					
-					"3" : { q:"Tổ chức bộ máy nhà nước và hệ thống các đơn vị hành chính nước ta thời Lí, Trần có đặc điểm gì?", 
-						a:"Chưa quy củ, còn lỏng lẻo", b:"Khá chặt chẽ, đầy đủ và có hệ thống hơn so với tổ chức bộ máy nhà nước thời Ngô, Đinh, Tiền Lê", 
-						c:"Tiến bộ hơn thời Đinh, Tiền Lê nhưng chưa chặt chẽ.", d:"Đầy đủ các cơ quan nhưng chưa có chức quan", correct:"2" },
-					
-					"4" : { q:"Bộ luật Hình Thư ra đời khi nào?", 
-						a:"Năm 1010", b:"Năm 1022", c:"Năm 1042", d:"Năm 1075", correct:"3" },
-					
-					"5" : { q:"Triều đại nào đã ban hành bộ luật Hình Thư", 
-						a:"Triều Ngô", b:"Triều Lí", c:"Triều Đinh", d:"Triều Trần", correct:"2" },
-					
-					"6" : { q:"Sự kiện nào dưới triều Lí cho thầy Nho giáo bắt đầu chiếm ưu thế ở nước ta?", 
-						a:"Các nhà Nho bắt đầu tham gia chính trị.", b:"Nho giáo được phổ biến rộng rãi ở trong nước.", 
-						c:"Nhà Lí cho xây dựng Văn miếu, thờ Khổng Tử và các học trò xuất sắc của ông.", 
-						d:"Phật giáo dần mất vai trò độc tôn của mình.", correct:"3" },
-					
-					"7" : { q:"Vua cuối cùng của triều Lí là:", 
-						a:"Lí Công Uẩn", b:"Lí Nhân Tông", c:"Lí Thánh Tông", d:"Lí Chiêu Hoàng", correct:"4" },
-					
-					"8" : { q:"Nhân vật có công lớn trong việc đưa Trần Cảnh lên ngôi thay thế triều Lí là ai?", 
-						a:"Trần Thủ Độ", b:"Trần Quang Khải", c:"Trần Hưng Đạo", d:"Trần Bình Trọng", correct:"1" },
-					
-					"9" : { q:"Bộ luật được ban hành dưới triều Lê là:", 
-						a:"Quốc triều Hình luật", b:"Hình thư", c:"Thanh triều Hình luật", d:"Hoàng Việt luật lệ", correct:"1" },
-					
-					"10" : { q:"Triều vua thịnh trị nhất dưới thời nhà Lê là:", 
-						a:"Lê Thái Tổ", b:"Lê Thái Tông", c:"Lê Thánh Tông", d:"Lê Nhân Tông", correct:"3" },
-					//1
-					"11" : { q:"Sự kiện đánh dấu nhà nước quân chủ chuyên chế Việt Nam chính thức thành lập là:", 
-						a:"Ngô Quyền xưng vương (939)", b:"Đinh Bộ Lĩnh lên ngồi Hoàng đế (968)", 
-						c:"Lý Thái Tổ dời đô ra Thăng Long (1010)", d:"Lý Thánh Tông đổi tên nước là Đại Việt", correct:"2" },
-					//2
-					"12" : { q:"Dưới thời Lý, Trần, Hồ, Lê chức quan cao nhất là:", 
-						a:"Tể tướng", b:"Thái úy", c:"Hà đê sứ", d:"Ngự sử đài", correct:"1" },
-					//3
-					"13" : { q:"Vua đã thực hiện cải cách hành chính bỏ chức Tể tướng là ai?", 
-						a:"Lý Thái Tổ", b:"Trần Nhân Tông", c:"Lê Thái Tổ", d:"Lê Thánh Tông", correct:"4" },
-					//4
-					"14" : { q:"Nhà nước phong kiến được hoàn chỉnh dưới thời:", 
-						a:"Lý", b:"Trần", c:"Hồ", d:"Lê Sơ", correct:"4" },
-					//5
-					"15" : { q:"Giáo dục thi cử trởi thành nguồn đào tạo và tuyển chọn quan lại dưới thời:", 
-						a:"Tiền Lê", b:"Trần", c:"Hồ", d:"Lê", correct:"4" },
-					//6
-					"16" : { q:"Đơn vị hành chính thời Lê Thánh Tông khác cơ bản với thời Lý, Trần là", 
-						a:"phủ", b:"đạo thừa tuyên", c:"huyện", d:"châu", correct:"2" },
-					//7
-					"17" : { q:"Bộ Quốc triều hình luật được hành dưới thời vua:", 
-						a:"Lý Thái Tông", b:"Lý Nhân Tông", c:"Trần Thánh Tông", d:"Lê Thánh Tông", correct:"4" },
-					//8
-					"18" : { q:"Nhân dân được tổ chức dân binh là chính sách của", 
-						a:"Nhà Lý", b:"Nhà Trần", c:"Nhà Hồ", d:"Nhà Lê", correct:"2" }
+					"1" : { q:"Chính sách kinh tế nham hiểm nhất của chính quyền đô hộ là ", a:"Cống nạp", b:"Cưỡng bức nhân dân ta cày cấy ", c:"Chính sách đồn điền ", d:"Nắm độc quyền muối và sắt ", correct:"3" },
+					"2" : { q:"Tôn giáo mà các triều đại phong kiến phương Bắc truyền bá vào nước ta là ", a:"Phật giáo", b:"Đạo giáo", c:"Nho giáo ", d:"Hồi giáo ", correct:"2" },
+					"3" : { q:"Nghề thủ công mới dưới thời Bắc thuộc là ", a:"Đúc đồng ", b:"Rèn sắt ", c:"Làm giấy và thuỷ tinh ", d:"Đồ trang sức ", correct:"2" },
+					"4" : { q:"Yếu tố văn hoá Trung Hoa mà nhân dân ta tiếp nhận là ", a:"Phong tục tập quán ", b:"Ngôn ngữ, văn tự ", c:"Tôn giáo ", d:"Nếp sống ", correct:"1" },
+					"5" : { q:"Cuộc khởi nghĩa đầu tiên của nhân dân ta dưới thời Bắc thuộc do ai lãnh đạo", a:"Hai Bà Trưng", b:"Bà Triệu", c:"Lý Nam Đế ", d:"Phùng Hưng ", correct:"0" },
+					"6" : { q:"Cuộc khởi nghĩa của Hai Bà Trưng diễn ra ở ", a:"Đầm Dạ Trạch", b:"Núi Tùng ", c:"Hát Môn", d:"Đường Lâm ", correct:"2" },
+					"7" : { q:"Viên tướng nhà Hán chỉ huy đạo quân xâm lược nước ta trong thời Hai Bà Trưng là ", a:"Ô Mã Nhi ", b:"Mã Viện", c:"Tô Định", d:"Trần Bá Tiên", correct:"1" },
+					"8" : { q:"Nguyên nhân thắng lợi của cuộc khởi nghĩa Hai Bà Trưng là gì ", a:"Chính quyền đô hộ còn non kém", b:"Lực lượng của chính quyền đô hộ ít, tinh thần chiến đấu bạc nhược ", c:"Cuộc khởi nghĩa được đông đảo nhân dân hưởng ứng, tham gia, trong quân đội có nhiều tướng chỉ huy tài giỏi, đứng đầu là Hai Bà Trưng.", d:"Nhờ địa thế núi rừng hiểm trở.", correct:"2" },
+					"9" : { q:"Người lãnh đạo cuộc kháng chiến chống quân xâm lược Lương ở đầm Dạ Trạch (Hưng Yên) là ai", a:"Lí Nam Đế", b:"Lí Phật Tử ", c:"Lí Công Uẩn ", d:"Triệu Quang Phục ", correct:"3" },
+					"10" : { q:".Quốc hiệu nước ta dưới thời Lí Bí là gì ", a:"Đại Cồ Việt", b:"Vạn Xuân ", c:"Âu Lạc", d:"Văn Lang", correct:"1" },
+					"11" : { q:".Cuộc khởi nghĩa hai Bà Trưng nổ ra đầu tiên ở ", a:"Hát Môn", b:"Mê Linh", c:"Cổ Loa ", d:"Luy Lâu ", correct:"0" },
+					"12" : { q:".Ý nghĩa quan trọng nhất của cuộc khởi nghĩa Hai Bà Trưng là ", a:"Cổ vũ tinh thần đấu tranh của nhân dân ta", b:"Giành độc lập trong ba năm", c:"Bước đầu xây dựng nền độc lập tự chủ ", d:"Khẳng định vai trò của phụ nữ Việt Nam ", correct:"0" },
+					"13" : { q:".Đặc điểm nổi bật của phong trào đấu tranh từ thế kỉ I đến đầu thế kỉ X là ", a:"Lực lượng tham gia đông đảo ", b:"Phụ nữ lãnh đạo", c:"Giành được độc lập trong thời gian ngắn ", d:"Tính liên tục và rộng lớn ", correct:"3" },
+					"14" : { q:".Cuộc khởi nghĩa đánh dấu nhân dân ta cơ bản giành được độc lập là ", a:"Khởi nghĩa Hai Bà Trưng ", b:"Khởi nghĩa Lý Bí ", c:"Khởi nghĩa Mai Thúc Loan", d:"Khởi nghĩa Khúc Thừa Dụ ", correct:"3" },
+					"15" : { q:".Người đặt quốc hiệu Vạn Xuân là ", a:"Lý Nam Đế", b:"Mai Hắc Đế ", c:"Triệu Việt Vương ", d:"Lý Phật Tử ", correct:"0" },
+					"16" : { q:".Người đã lợi dụng địa hình để tốc chức kháng chiến giành thắng lợi là ", a:"Hai Bà Trưng ", b:"Lý Bí ", c:"Triều Quang Phục ", d:"Khúc Thừa Dụ ", correct:"2" },
+					"17" : { q:".Sự kiện mở đầu cho thời đại mới của dân tộc là ", a:"Khởi nghĩa Hai Bà Trưng ", b:"Nhà nước Vạn Xuân ra đời ", c:"Khú Thừa Dụ giành quyền tự chủ ", d:"Chiến thắng Bạch Đằng năm 938", correct:"3" },
+					"18" : { q:".Người đa thực hiện những cải cách để xây dựng chính quyền độc lập tự chủ là ", a:"Khúc Thừa Dụ", b:"Khúc Hạo", c:"Ngô Quyền ", d:"Lý Bí ", correct:"1" }
 				},
 				"17" : {
 					"1" : { q:"Kinh đô nước ta thời Lí, Trần là gì?", 
@@ -565,8 +455,11 @@ package Data
 					"2":"Cổ vật Chăm Pa trong văn hoá Đại Việt"
 				},
 				"15": {
-					"1":"Lịch sử Việt Nam từ thuở sơ khai đến 1858",
-					"2":"Quốc hiệu Việt Nam qua các thời kỳ lịch sử"
+					"1":"Lịch sử Việt Nam từ thuở sơ khai đến 1858"
+				},
+				"16": {
+					"1":"Quốc hiệu Việt Nam qua các thời kỳ lịch sử",
+					"2":"Huyền sử Âu Lạc"
 				},
 				"17": {
 					"1":"Ngô Quyền phá quân Nam Hán",
@@ -590,6 +483,81 @@ package Data
 		public static function get TLQuestions():Object
 		{
 			return {
+				"13" : {
+					"1": { q:"Có bằng chứng gì để chứng minh Việt Nam đã từng trải qua thời kỳ nguyên thuỷ không?",
+						ans:'- Khảo cổ học đã chứng minh cách đây 30-40 vạn năm trên đất nước Việt Nam đã có Người tối cổ sinh sống. Các nhà khảo cổ học đã tìm thấy dấu tích Người tối cổ có niên đại cách đây 30-40 vạn năm và nhiều công cụ đá ghè đẻo thô sơ ở Thanh Hoá, Đồng Nai, Bình Phước…' },
+					"2": { q:"Em có nhận xét gì về địa bàn sinh sống của Người tối cổ Việt Nam và người tối cổ ở Việt Nam sinh sống như thế nào?",
+						ans:'- Địa bàn sinh sống trải dài trên 3 miền đất nước nhiều địa phương có Người tối cổ sinh sống.\n- Cũng giống Người tối cổ ở các nơi khác trên thế giới, Người tối cổ ở Việt Nam cũng sống thành bầy săn bắt thú rừng và hái lượm hoa quả' },
+					"3": { q:"Hãy cho biết những điểm tiến bộ trong hoạt động kinh tế của cư dân Hòa Bình, Bắc Sơn", 
+						ans:'- Sống định cư lâu dài, hợp thành thị tộc, bộ lạc\n- Ngoài săn bắt, hái lượm còn biết trồng trọt rau, củ, cây ăn quả…\n- Bước đầu biết mài rìu, làm một số công cụ khác bằng xương, tre, gỗ, bắt đầu biết nặng đồ gốm\n- Đời sống vật chất tinh thần được nâng cao' },
+					"4": { q:"Khi Người tinh khôn xuất hiện, công xã thị tộc hình thành, vậy theo em công xã thị tộc là gì?", 
+						ans:'- Công xã thị tộc là giai đoạn kế tiếp giai đoạn bầy người nguyên thuỷ. Ở đó con người sống thành thị tộc, bộ lạc không còn sống thành từng bầy như trước đây.\n- Cũng như nhiều nơi khác trên thế giới trải qua quá trình lao động lâu dài, những dấu vết của động vật mất dần. Người tối cổ Việt Nam đã tiến hoá dần thành Người Tinh khôn (Người Hiện đại). các nhà khảo cổ học đã tìm thấy ở nhiều địa phương của nước ta những hoá thạch răng và nhiều công cụ đá ghè đẽo của Người hiện đại ở các di tích thuộc văn hoá Ngườm, Sơn Vi.' },
+					"5": { q:"Chủ nhận văn hoá Ngườm, Sơn Vi cư trú ở những địa bàn nào? ", 
+						ans:'Chủ nhân văn hoá Sơn Vi sống trong mái đá, hang động, ven bờ sông, suối trên địa bàn rộng từ Sơn La đến Quảng Trị.' },
+					"6": { q:"Những tiến bộ trong cuộc sống của Người Sơn Vi so với Người tối cổ?", 
+						ans:'Người Sơn Vi đã sống thành thị tộc, sử dụng công cụ ghè đẽo, lấy săn bắt, hái lượm làm nguồn sống chính.' },
+					"7": { q:"Đời sống vật chất và tinh thần của cư dân Hoà Bình, Bắc Sơn được nâng cao như thế nào", 
+						ans:'- Cách đây khoảng 12.000 năm đến 6000 năm ở Hoà Bình, Bắc Sơn (Lạng Sơn) và nhiều nơi khác như: Thái Nguyên, Ninh Bình, Thanh Hoá, Nghệ An, Quảng Bình đã tìm thấy dấu tích của văn hoá Sơn Kỳ đá mới. Gọi chung là văn hoá Hoà Bình Bắc Sơn (gọi theo tên di chỉ khảo cổ tiêu biểu).\n- Đời sống của cư dân Hoà Bình, Bắc Sơn:\n  + Sống định cư lâu dài, hợp thành thị tộc, bộ lạc.\n  + Ngoài săn bắt, hái lượm còn biết trồng trọt: rau, củ, cây ăn quả.\n  + Bước đầu biết mài lưỡi rìu, làm một số công cụ khác bằng xương, tre, gỗ, bắt đầu biết nặng đồ gốm.\n→ Đời sống vật chất, tinh thần được nâng cao.' },
+					"8": { q:"Những tiến bộ trong việc chế tạo công cụ và trong đời sống của cư dân Hòa Bình – Bắc Sơn?", 
+						ans:'- Cách nay 6000 – 5000 năm (TCN), kỹ thuật chế tạo công cụ có bước phát triển mới gọi là  “cách mạng đá mới”\n- Biểu hiện tiến bộ, phát triển:\n  + Sử dụng kỹ thuật của khoan đá, làm gốm bằng bàn xoay.\n  + Biết trồng lúa, dùng cuốc đá. Biết trao đổi sản phẩm của các thị tộc, bộ lạc.\n→ Đời sống cư dân ổn định và được cải thiện hơn, địa bàn cư trú càng mở rộng. ' },
+					"9": { q:"Sự ra đời của thuật luyện kim và nghề trồng lúa nước có ý nghĩa gì đối với các bộ lạc sống trên đất nước ta cách đay khoảng 3000 đến 4000 năm?", 
+						ans:'- Cách đây khoảng 4000 – 3000 năm các bộ lạc sống rải rác trên khắp đất nước ta đã đạt đến trình độ phát triển cao của kỹ thuật chế tác đá, làm gốm đặc biệt biết sử dụng nguyên liệu đồng và biết đến thuật luyện kim. \n- Nhở đó mà nghề  trồng lúa nước trở thành phổ biến. Tiêu biểu có các bộ lạc Phùng Nguyên, Sa Huỳnh. Đồng Nai. \n- Thuật luyện kim và nghề trồng lúa nước đã tạo nên năng sất lao động cao. Trên cơ sở đó đã hình thành những nền văn hóa lớn vào cuối thời nguyên thủy.' }
+				},
+				"14" : {
+					"1": { q:"Nhà nước Văn Lang được hình thành trên cơ sở nào?", 
+						ans:'- Cũng như các nơi khác nhau trên thế giới các quốc gia cổ trên đất nước Việt Nam được hình thành trên cơ sở nền kinh tế, xã hội có sự chuyển biến kinh tế, xã hội diễn ra mạnh mẽ ở thời kỳ Đông Sơn (Đầu thiên niên kỷ I TCN).\n- Kinh tế: đầu thiên niên kỷ I TCN cư dân văn hoá đã biết sử dụng công cụ phổ biến và bắt đầu công cụ sắt.\n  + Nông nghiệp dùng cày khá phát triển, kết hợp với săn bắn, chăn nuôi và đánh cá.\n  + Có sự phân chia lao động nông nghiệp và thủ công nghiệp.' },
+					"2": { q:"Hoạt động kinh tế của cư dân Đông Sơn có gì khác với cư dân Phùng Nguyên?", 
+						ans:'-Sử dụng công cụ đồng phổ biến, biết đến công cụ sắt.\n-Dùng cày khá phổ biến.\n- Có sự phân công lao động.\n→ Đời sống kinh tế vật chất tiến bộ hơn, phát triển ở trình độ cao hơn hẳn.\n- Sự phân hoá giàu nghèo qua kết quả khai quật một tàng của các nhà khảo cổ.\n- Về tổ chức làng, xóm để thấy được sự biến đổi về xã hội: Đa dạng, phức tạp hơn' },
+					"3": { q:"Sự biến đổi, phát triển kinh tế, xã hội đó đặt ra những yêu cầu đòi hỏi gì?", 
+						ans:'- Yêu cầu trị thuỷ để đảm bảo nền nông nghiệp ven sông.\n- Quản lý xã hội.\n- Chống các thế lực ngoại xâm để đáp ứng những yêu cầu này Nhà nước ra đời.' },
+					"4": { q:"So sánh về tổ chức bộ máy Nhà nước và đơn vị hành chính nhà nước Văn Lang và nhà nước Âu lạc?", 
+						ans:'Nhà nước Âu Lạc tuy cùng một thời kỳ Lịch sử với Nhà nước Văn Lang (thời kỳ cổ đại) nhưng có bước phát triển cao hơn so với những biểu hiện:\nQuốc gia Văn lang (VII – III TCN)\n - Kinh đô: bạch Hạc (Việt Trì – Phú Thọ).\n - Tổ chức Nhà nước:\n  + Đứng đầu đất nước là vua Hùng, vua Thục.\n  + Giúp việc có các Lạc Hầu, Lạc tướng. Cả nước chia làm 15 bộ do lạc tướng đứng đầu.\n  + Ở các làng xã đứng đầu là Bồ chính.\n→ Tổ chức bộ máy Nhà nước còn đơn giản, sơ khai.' +
+					'Quốc gia Âu Lạc : (III – II TCN)\n - Kinh đô: Cổ Loa (Đông Anh – Hà Nội).\n - Lãnh thổ mở rộng hơn, tổ chức bộ máy Nhà nước chặt chẽ hơn.\n - Có quân đội mạnh, vũ khí thành Cổ Loa kiên cố, vững chắc.\n→ Nhà nước Âu Lạc có bước phát triển cao hơn Nhà nước Văn Lang.' },
+					"5": { q:"Nêu những nét cơ bản trong đời sống vật chất, tinh thần của cư dân Văn Lang – Âu Lạc", 
+						ans:'* Đời sống vật chất – tinh thần \n+ Đời sống vật chất:\n - Ăn: gạo tẻ, gạo nếp, thịt cá, rau.\n - Mặc: Nữ  mặc áo, váy, nam đóng khố.\n - Ở: Nhà sàn.\n*Đời sống tinh thần:\n - Sùng bái thần linh, thờ cúng tổ tiên.\n - Tổ chức cưới xin, ma chay, lễ hội.\n - Có tập quán nhuộm răng đen, ăn trầu, xăm mình, dùng đồ trang sức.\n→ Đời sống vật chất tinh thần của cư dân Văn Lang –  u Lạc cổ khá phong phú, hoà nhập với tự nhiên.' },
+					"6": { q:"Trình bày quá trình hình thành và phát triển Quốc gia cổ Chămpa ?", 
+						ans:'- Được hình thành trên cơ sở văn hoá Sa Huỳnh (Quảng Ngãi) gồm khu vực đồng bằng ven biển miền Trung bộ và Nam Trung Bộ. vùng đất này thời Bắc thuộc bị nhà Hán xâm lược và cai trị. Vào cuối thế kỷ II nhân lúc tình hình Trung Quốc rối loạn Khu Liên đã hô hào nhân dân Tượng Lâm nổi dậy giành chính quyền tự chủ sau đó Khu Liên tự lập làm vua, đặt tên là nước Lâm Ap, lãnh thổ ngày càng mở rộng phía Bắc đến Hoành Sơn – Quảng Bình, phía Nam Bình Thuận – Phan Rang. Thế kỷ VI đổi tên thành Chămpa.\n- Kinh đô: Lúc đầu Trà Kiệu – Quảng Nam sau đó rời đến Đồng dương – Quảng Nam, cuối cùng chuyển đến Trà Bàn – Bình Định.' },
+					"7": { q:"Trình bày tình hình kinh tế, văn hóa, xã hội  Chămpa từ thế kỷ II – X ?", 
+						ans:'*Kinh tế:\n - Hoạt động chủ yếu là trồng lúa nước:\n - Sử  dụng công cụ sắt và sức kéo trâu bò.\n - Thủ công: Dệt, làm đồ trang sức, vũ khí, đóng gạch và xây dựng, kỹ thuật xây tháp đạt trình độ cao.\n* Chính trị – xã hội:\n - Theo chế độ quân chủ chuyên chế.\n - Chia nước làm 4 châu, dưới châu có huyện, làng.\n - Xã hội gồm các tầng lớp: Quý tộc, nông dân tự do, nô lệ.\n*Văn hoá:\n - Thế kỷ IV có chữ viết từ chữ Phạn (Ấn Độ).\n- Theo Balamôn giáo và Phật giáo.\n- Ở nhà sàn, ăn trầu, hoả táng người chết.' },
+					"8": { q:"Tóm tắt quá trình hình thành  Quốc gia cổ Phù Nam ?", 
+						ans:'- Địa bàn: Quá trình thành lập:\nTrên cơ sở văn hoá Óc Eo (An Giang) thuộc châu thổ đồng bằng sông Cửu Long hình thành quốc gia cổ phù Nam (Thế kỷ I), phát triển thịnh vượng (III – V) đến cuối thế kỷ VI suy yếu bị Chân Lạp thôn tính.' },
+					"9": { q:"Hãy nêu những nét về tình hình kinh tế, văn hoá, xã hội của Phù Nam.", 
+						ans:'+ Kinh tế: \n  - sản xuất nông nghiệp kết hợp với thủ công, đánh cá, buôn bán.\n  - Ngoại thương đường biểu rất phát triển\n+ Văn hoá : \n  - Ở nhà sàn\n  -  theo Phật giáo và Bàlamôn giáo, nghệ thuật ca, múa nhạc phát triển.\n+ Xã hội gồm: Có sự phân hóa giàu nghèo hình thành các tầng lớp quý tộc, bình dân, nô lệ.' }
+				},
+				"15" : {
+					"1": { q:"Các triều đại phong kiến phương Bắc chia  u Lạc cũ thành quận, huyện nhằm mục đích gì?", 
+						ans:'- Năm 179 TCN Triệu Đà xâm lược  u Lạc, từ đó nước ta lần lượt bị các triều đại phong kiến Trung quốc: nhà Triệu, Hán, Tuỳ, Đường đô hộ. Đất  u Lạc cũ bị chia thành các quận huyện.\n+  Nhà Triệu chia thành 2 Quận, sáp nhập vào quốc gia Nam Việt.\n  +Nhà Hán chia làm 3 Quận sáp nhập vào Giao Chỉ cùng với một số quận của Trung Quốc.\n  + Nhà Tuỳ, Đường chia làm nhiều châu.\- Mục đích của phong kiến phương Bắc là sáp nhập đất Âu Lạc cũ vào bản đồ Trung Quốc.' },
+					"2": { q:"Chính sách bót lột kinh tế của chính quyền đô hộ như thế nào?", 
+						ans:'+ Thực hiện chính sách bóc lột, cống nạp nặng nề.\n+ Nắm độc quyền muối và sắt.\n+ Quan lại đô hộ bạo ngược tham lam ra sức bóc lột dân chúng để làm giàu.' },
+					"3": { q:"Em có nhận xét gì về chính sách bóc lột của chính quyền đô hộ?", 
+						ans:'Đó là một chính sách bóc lột triệt để tàn bạo, đặc biệt nặng nề chỉ có ở một chính quyền ngoại bang.' },
+					"4": { q:"Chính sách bót lột kinh tế của chính quyền đô hộ như thế nào ?", 
+						ans:'+ Truyền bá Nho giáo, mở lớp chữ Nho.\nGiáo lý của Nho Giáo quy định tôn ti, trật tự xã hội rất khắt khe ngặt nghèo vì vậy chính quyền đô hộ phương Bắc truyền bá Nho giáo vào nước ta cũng không nằm ngoài mục đích.\n+ Bắt nhân dân ta phải theo phong tục, tập quán người Hoa.\+ Đưa người Hán vào sống chung với người Việt.' },
+					"5": { q:"Hán hoá người Việt âm mưu đó thường gọi là gì?", 
+						ans:'Chính quyền đô hộ bắt nhân dân phải thay đổi cho giống với người Hán, giống đến mức không phân biệt được đâu là người Hán đâu là người Việt thì càng tốt. \nChính quyền đô hộ còn áp dụng luật pháp hà khắc thẳng tay đàn áp các cuộc đấu tranh của nhân dân ta.\nNhằm mục đích thực hiện âm mưu đồng hoá dân tộc Việt Nam.' },
+					"6": { q:"Trình bày tình hình kinh tế của nước ta thời Bắc thuộc?", 
+						ans:'*Về kinh tế\n - Trong nông nghiệp:\n  + Công cụ sắt được sử dụng phổ biến.\n  + Công cuộc khai hoang được đẩy mạnh.\n  + Thuỷ lợi mở mang.\n⇒ Năng suất lúa tăng hơn trước.\n - Thủ công nghiệp, thương mại có sự chuyển biến đáng kể.\n  + Nghề cũ phát triển hơn: Rèn sắt, khai thác vàng bạc làm đồ trang sức.\n  + Một số nghề mới xuất hiện như làm giấy, làm thuỷ tinh.\n  + Đường giao thông thuỷ bộ giữa các vùng quận hình thành.\n*Về văn hoá – xã hội:\n  + Về văn hoá – xã hội \n - Một mặt ta tiếp thu những tích cực của văn hoá Trung Hoa thời Hán – Đường như: ngôn ngữ, văn tự.\n - Bên cạnh đó nhân dân ta vẫn giữ được phong tục tập quán: Nhuộm răng, ăn trầu, làm bánh chưng, bánh dày, tôn trọng phụ nữ.\n→ Nhân dân ta không bị đồng hoá.' },
+					"7": { q:"So sánh chuyễn biến xã hội thời Bắc thuộc với thời kỳ Văn Lang  u Lạc ", 
+						ans:'- Quan hệ xã hội là quan hệ  giữa nhân dân với chính quyền đô hộ (thường xuyên căng thẳng).\n- Đấu tranh chống đô hộ.\n- Ở một số nơi nông dân tự do bị nông nô hoá, bị bóc lột theo kiểu địa tô phong kiến.\n- Quan hệ bóc lột địa tô phong kiến xâm nhập vào đất  u Lạc cũ và sẽ dẫn đến sự biến đổi sâu sắc hơn về mặt xã hội. Các tầng lớp xã hội có chuyển biến thành các tầng lớp mới. Một số nông dân công xã tự do biến thành nông nô. Một số người nghèo khổ biến thành nô tì.' }
+				},
+				"16" : {
+					"1": { q:"Em có nhận xét về các cuộc đấu tranh của nhân dân ta thời Bắc thuộc.", 
+						ans:'- Trong suốt 1000 năm Bắc thuộc, dân  u Lạc liên tiếp vùng dậy đấu tranh giành độc lập dân tộc.\n- Các cuộc khởi nghĩa nổ ra liên tiếp, rộng lớn, nhiều cuộc khởi nghĩa có nhân dân cả 3 Quận tham gia.\n- Kết quả: Nhiều cuộc khởi nghĩa đã thắng lợi lập được chính quyền tự chủ (Hai Bà Trưng, Lý Bí, Khúc Thừa Dụ)\n- Ý nghĩa: thể hiện tinh thần yêu nước chống giặc ngoại xâm, ý chí tự chủ và tinh thần dân tộc của nhân dân Âu Lạc.' },
+					"2": { q:"Thống kê các cuộc đấu tranh tiêu biểu từ thế kỉ I- thế kỉ X", 
+						ans:'Năm 40: KN Hai Bà Trưng ở Hát Môn\nNăm 100, 137, 144: KN của ND Nhật Nam ở Quận Nhật Nam\nNăm 157: KN của ND Cửu Chân ở Quận Cửu Chân \nNăm 178, 190: KN của ND Giao Chỉ ở Quận Giao Chỉ\nNăm 248: KN Bà Triệu\nNăm 542: KN Lý Bí\nNăm 687: KN Lý Tự Thiên\nNăm 722: KN Mai Thúc Loan\nNăm 776 – 791: KN Phùng Hưng \nNăm 819 – 820: KN Dương Thanh\nNăm 905: KN Khúc Thừa Dụ\nNăm 938: KN Ngô Quyền' },
+					"3": { q:"Hãy nêu những nét chính về cuộc khởi nghĩa Hai Bà Trưng", 
+						ans:'Khởi nghĩa Hai Bà Trưng năm 3 - 40 chống nhà Đông Hán ở Hát Môn, Mê Linh, Cổ Loa, Luy Lâu\n- Tháng 3-40 Hai Bà Trưng phát cờ khởi nghĩa được nhân dân nhiệt liệt hưởng ứng chiếm được Cổ Loa buộc thái thú Tô Định trốn về TQ, KN thắng lợi, Trung Trắc lên làm vua xây dựng chính quyền tự chủ.\n- Năm 42 Nhà Hán đua hai vạn quân sang xâm lược. Hai Bà trung tổ chức kháng chiến anh dũng nhưng do chênh lệch về lực lượng, kháng chiến thất bại Hai Bà Trưng hy sinh.\n- Mở đầu cho cuộc đấu tranh chống áp bức đô hộ của nhân dân Âu Lạc.\n- Khẳng định khả năng, vai trò của phụ nữ trong đấu tranh chống ngoại xâm.' },
+					"4": { q:"Hãy nêu những nét chính về cuộc khởi nghĩa Lý Bí", 
+						ans:'Khởi nghĩa Lí Bí năm 542 chống Nhà Lương ở Long Biên - Tô Lịch\n- Năm 542 Lý Bí  liên kết hào kiệt các châu thuộc miền Bắc khởi nghĩa. Lật đổ chế độ đô hộ.\n - Năm 544 Lý Bí lên ngôi lập nước Vạn Xuân.\n - Năm 542 Nhà Lương đem quân xâm lược, Lý Bí trao binh quyền cho Triệu Quang Phục tổ chức kháng chiến.\n→ Năm 550 thắng lợi. Triệu Quang phục lên ngôi vua.\n - Năm 571 Lý Phật Tử  cướp ngôi.\n - Năm 603, nhà Tuỳ xâm lược, nước Vạn Xuân thất bại.\n - Giành được độc lập tự chủ sau 500 năm đấu tranh bền bỉ.\n - Khẳng định được sự trưởng thành của ý thức dân tộc.\n→ Bước phát triển của phong trào đấu tranh giành độc lập của nhân dân ta thời Bắc thuộc.' },
+					"5": { q:"Hãy nêu những nét chính về cuộc khởi nghĩa Khúc Thừa Dụ", 
+						ans:'Khởi nghĩa Khúc Thừa Dụ năm 905 chống nhà Đường ở Tống Bình\n- Năm 905 Khúc Thừa Dụ được nhân dân ủng hộ đánh chiếm Tống Bình, giành quyền tự chủ (giành chức Tiết độ sứ).\n- Năm 907 Khúc Hạo xây dựng chính quyền độc lập tự chủ.\n- Lật đổ đô hộ của nhà Đường, giành độc lập tự chủ.\n- Đánh dấu thắng lợi căn bản trong cuộc đấu tranh giành độc lập của nhân dân ta thời Bắc thuộc.' },
+					"6": { q:"Hãy nêu những nét chính về cuộc khởi nghĩa Ngô Quyền", 
+						ans:'Khởi nghĩa Ngô Quyền năm 938 chống quân Nam Hán trên sông Bạch Đằng\n- Năm 938 quân Nam Hán xâm lược nước ta, Ngô Quyền lãnh đạo nhân dân giết chết tên phản tặc Kiều Công Tiễn (cầu viện Nam Hán) và tổ chức đánh quân nam Hán trên sông Bạch Đằng, đập tan âm mưu xâm lược của nhà Nam Hán.\n- Bảo vệ vững chắc nền độc lập tự chủ của đất nước.\n- Mở ra một thời đại mới thời đại độc lập tự chủ lâu dài cho dân tộc.\n- Kết thúc vĩnh viễn 1 nghìn năm đô hộ phong kiến của phương Bắc.' },
+					"7": { q:"Việc thành lập Nhà nước Vạn Xuân có ý nghĩa gì?", 
+						ans:'- Cuộc khởi nghĩa của Lí Bí và Triệu Quang Phục giành thắng lợi, thành lập nhà nước Vạn Xuân độc lập, đánh dấu một bước trưởng thành trên con đường đấu tranh giải phóng đấu tranh giải phóng dân tộc của nhân dân ta.\- Mặc dù chỉ tồn tại được 60 năm, nước Vạn Xuân độc lập vần là một sự cổ vũ lớn cho thế hệ sau trong cuộc chiến đấu vì nền độc lập của Tổ Quốc.' },
+					"8": { q:"Trình nguyên nhân thắng lợi và ý nghĩa của chiến thắng Bạch Đằng ", 
+						ans:'- Nguyên nhân thắng lợi: \n  + Do sức mạnh đoàn kết chiến đấu chống ngoại xâm của toàn dân\n  + Do tài mưu lược của Ngô Quyền trong việc sử dụng nghệ thuật thủy chiến\n- Ý nghĩa lịch sử:\n  + Nên lên ý chí quyết tâm bảo vệ thành quả đấu tranh của dân tộc ta.\n  + Xác lập vững chắc nền độc lạp của Tổ Quốc\n  + Đánh dấu sự trưởng thành của dân tộc và kết thúc hoàn toàn thời kì đấu tranh giành lại độc lập kéo dài hàng chục thế kỉ.' }
+				},
 				"17" : {
 					"1" : { q:"Em hãy giải thích vì sao Ngô Quyền sau khi giành được độc lập cho Tổ quốc chỉ xưng vương, còn Đinh Bộ Lĩnh sau khi thống nhất đất nước lại xưng đế?", 
 						ans:'- Ngô Quyền sau khi giành độc ập cho Tổ quốc chỉ xưng vương, bởi vì: Vương là tước hiệu của vua nước nhỏ, chịu thần phục của nước khác, ở đây không phải Ngô Quyền thần phục phong kiến phương Bắc mà ông nhận thức được rằng mối quan hệ giao bang giữa ta và Trung Quốc là rất quan trọng, nên ông thận trọng chỉ xưng vương để tránh sứ đối đầu với phong kiến phương Bắc khi nền độc lập của ta còn non trẻ.' + 
